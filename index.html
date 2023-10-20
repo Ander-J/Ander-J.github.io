@@ -1,10 +1,23 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
     <head>
         <title>Sissejuhatus infotehnoloogiasse kodutöö</title>
     </head>
-    <h1>Näidisleht</h1>
-        <a href="https://taltech.ee/" title="TallEgg" style="text-decoration:none"><h2>TalTech</h2></a>
+    <script>
+        function changeColorDark(x) {
+            x.style.color = "white";
+            document.body.style.backgroundColor = "lightgray";
+        }
+        function changeColorLight(x) {
+            x.style.color = "black";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+    <h1 onmouseover="changeColorDark(this)" onmouseleave="changeColorLight(this)">Pane hiir siia kohale</h1>
+        <a href="https://taltech.ee/" title="TallEgg" style="text-decoration:none">
+            <h2>TalTech</h2>
+        </a>
     <body>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
@@ -15,27 +28,40 @@
             Quisque non ipsum a leo eleifend tincidunt nec non mauris. <br>
             Nulla non turpis.
         </p>
+        <br>
+        <p>Lühike kokkuvõte investeeringutest erinevatesse aktsiatesse:</p>
         <table>
             <tr>
                 <th>
-                    TH
+                    Aktsia
                 </th>
                 <th>
-                    TH
+                    Kasum/kahjum
                 </th>
             </tr>
             <tr>
                 <td>
-                    TD
+                    AMD
                 </td>
                 <td>
-                    TD
+                    Kahjum
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Tallink
+                </td>
+                <td>
+                    Kahjum
                 </td>
             </tr>
         </table>
+        <p>Kokkuvõteks, peaks hoopis investeerima ruletilauale.</p>
     </body>
+    <br>
     <br>
     <footer>
         Ander Jorš (233879IADB)
     </footer>
+    <img src="img/cat.gif" alt="Keerlev kass">
 </html>
